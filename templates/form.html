@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Form Page</title>
+  </head>
+  <body>
+    <center>
+    <h1 style="margin-top: 30px; margin-left: 120px;">Please Fill Your Details</h1>
+    </center>
+    <div class="container">
+        <form action="/upload" method="POST">
+            <div class="mb-3">
+              <label for="firstname" class="form-label">First Name</label>
+              <input type="text" name="firstname" class="form-control" placeholder="Please Enter Your First Name" id="firstname" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" name="lastname" class="form-control" placeholder="Please Enter Your Last Name" id="lastname" >
+              </div>
+
+              <div class="mb-3">
+                <label for="schoolname" class="form-label">School Name</label>
+                <input type="text" name="schoolname" class="form-control" placeholder="Please Enter Your School Name" id="schoolname" >
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="number" name="phone" class="form-control" placeholder="Please Enter Your Phone Number" id="phonenumber" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">E-Mail Address</label>
+                <input type="email" name="email" class="form-control" placeholder="Please Enter Your Email Address" id="email" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="collagename" class="form-label">Collage Name (Optional)</label>
+                <input type="text" name="collagename" class="form-control" placeholder="Please Enter Your Collage Name" id="collagename" >
+              </div>
+              <div class="mb-3">
+                  <h5>Please Write Something About Yourself</h5>
+                  <textarea name="about" id="about" cols="30" rows="10"></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="skill" class="form-label">Enter Skill</label>
+                <input type="text" name="skill" class="form-control" placeholder="Please Enter Your Skill" id="skill" >
+              </div>
+
+              <h5>Please Choose Your Profile Picture</h5>
+              <div class="input-group">
+                <input type="file" name="dp" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+              </div>
+                <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+    <style>
+        body{
+            background: #212121;
+            color: white;
+        }
+    </style>
+</html>
